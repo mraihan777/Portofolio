@@ -752,9 +752,7 @@ section {
   position: relative;
 }
 
-.skill-bar-fill.animated {
-  /* JS will set width */
-}
+
 
 /* ─── PROJECTS ──────────────────────────────────────────────── */
 #projects {
