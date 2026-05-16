@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Case Study — Muhammad Raihan</title>
+  <meta name="description"
+    content="Detailed case study of projects built by Muhammad Raihan, Web Developer & Informatics Engineering Student." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F4EFE4',
+            'neo-black': '#0A0A0A',
+            'neo-yellow': '#FFE500',
+            'neo-pink': '#FF2D78',
+            'neo-blue': '#00C2FF',
+            'neo-lime': '#7CFF6B',
+            'neo-orange': '#FF6B2D',
+            'neo-purple': '#C77DFF',
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+            mono: ['"Space Mono"', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Home">R.</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <button id="mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html#about" class="mobile-link">About</a>
+    <a href="index.html#skills" class="mobile-link">Skills</a>
+    <a href="index.html#projects" class="mobile-link">Projects</a>
+    <a href="index.html#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══ CASE STUDY HERO ═════════════════════════════════════════ -->
+  <section id="case-hero" aria-label="Project case study hero">
+    <div class="case-hero-inner">
+      <a href="index.html#projects" class="case-back-link fade-up">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Back to Projects
+      </a>
+      <div class="case-hero-tag fade-up stagger-1" id="case-tag">Web App</div>
+      <h1 class="case-hero-title fade-up stagger-2" id="case-title">Project Title</h1>
+      <p class="case-hero-subtitle fade-up stagger-3" id="case-subtitle">Project subtitle goes here</p>
+      <div class="case-hero-meta fade-up stagger-4">
+        <div class="case-meta-item">
+          <span class="case-meta-label">Role</span>
+          <span class="case-meta-value" id="case-role">Full-Stack Developer</span>
+        </div>
+        <div class="case-meta-divider"></div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Year</span>
+          <span class="case-meta-value" id="case-year">2025</span>
+        </div>
+        <div class="case-meta-divider"></div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Type</span>
+          <span class="case-meta-value" id="case-type">Web Application</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECT IMAGE SHOWCASE ══════════════════════════════════ -->
+  <section id="case-showcase" aria-label="Project showcase">
+    <div class="case-showcase-wrapper" id="case-showcase-container">
+      <!-- Dynamically injected: single or dual image -->
+    </div>
+  </section>
+
+  <!-- ═══ OVERVIEW ════════════════════════════════════════════════ -->
+  <section id="case-overview" aria-labelledby="overview-heading">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title" id="overview-heading">Overview</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="case-overview-grid">
+        <div class="case-overview-text fade-up" id="case-overview-text">
+          <!-- Dynamically injected -->
+        </div>
+        <div class="case-overview-stats fade-up stagger-2">
+          <div class="case-stat-card" id="case-stat-1">
+            <div class="case-stat-number">—</div>
+            <div class="case-stat-label">Label</div>
+          </div>
+          <div class="case-stat-card" id="case-stat-2">
+            <div class="case-stat-number">—</div>
+            <div class="case-stat-label">Label</div>
+          </div>
+          <div class="case-stat-card" id="case-stat-3">
+            <div class="case-stat-number">—</div>
+            <div class="case-stat-label">Label</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ KEY FEATURES ════════════════════════════════════════════ -->
+  <section id="case-features" aria-labelledby="features-heading">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <span class="section-number" style="background:var(--black); color:var(--yellow);">02</span>
+        <h2 class="section-title" id="features-heading">Key Features</h2>
+        <div class="section-line" style="background:rgba(0,0,0,0.3);"></div>
+      </div>
+      <div class="case-features-grid" id="case-features-grid">
+        <!-- Dynamically injected -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TECH STACK ══════════════════════════════════════════════ -->
+  <section id="case-tech" aria-labelledby="tech-heading">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <span class="section-number" style="background:var(--yellow); color:var(--black);">03</span>
+        <h2 class="section-title" style="color:var(--cream);" id="tech-heading">Tech Stack</h2>
+        <div class="section-line" style="background:#333;"></div>
+      </div>
+      <div class="case-tech-grid" id="case-tech-grid">
+        <!-- Dynamically injected -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CHALLENGES & SOLUTIONS ══════════════════════════════════ -->
+  <section id="case-challenges" aria-labelledby="challenges-heading">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title" id="challenges-heading">Challenges & Solutions</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="case-challenges-list" id="case-challenges-list">
+        <!-- Dynamically injected -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ RESULTS ═════════════════════════════════════════════════ -->
+  <section id="case-results" aria-labelledby="results-heading">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <span class="section-number" style="background:var(--black); color:var(--lime);">05</span>
+        <h2 class="section-title" id="results-heading">Results & Learnings</h2>
+        <div class="section-line" style="background:rgba(0,0,0,0.3);"></div>
+      </div>
+      <div class="case-results-content fade-up" id="case-results-content">
+        <!-- Dynamically injected -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA & NAVIGATION ════════════════════════════════════════ -->
+  <section id="case-cta" aria-label="Project actions">
+    <div class="section-wrapper">
+      <div class="case-cta-inner">
+        <h2 class="case-cta-title fade-up">Interested in<br>this project?</h2>
+        <div class="case-cta-buttons fade-up stagger-1">
+          <a id="case-demo-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-lime"
+            style="font-size:0.9rem;">
+            View Live Demo →
+          </a>
+          <a href="index.html#contact" class="btn btn-outline" style="font-size:0.9rem;">
+            Let's Discuss →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Navigation -->
+      <div class="case-project-nav fade-up stagger-2">
+        <a id="case-prev-link" href="#" class="case-nav-card case-nav-prev">
+          <span class="case-nav-label">← Previous Project</span>
+          <span class="case-nav-title" id="case-prev-title">Project</span>
+        </a>
+        <a id="case-next-link" href="#" class="case-nav-card case-nav-next">
+          <span class="case-nav-label">Next Project →</span>
+          <span class="case-nav-title" id="case-next-title">Project</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-copy">
+      <span>RAIHAN</span> · Built with ✦ · 2026 ·
+    </div>
+    <button class="footer-top-btn" id="back-to-top" aria-label="Back to top">
+      ↑ Back to Top
+    </button>
+  </footer>
+
+  <!-- ═══ JAVASCRIPT ═══════════════════════════════════════════════ -->
+  <script src="script.js"></script>
+  <script src="case-study.js"></script>
+
+</body>
+
+</html>
